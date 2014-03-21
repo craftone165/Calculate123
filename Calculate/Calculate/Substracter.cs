@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Calculate
 {
-    class Substracter
+    class Substracter : IBinaryOperation
     {
         public string Calculate(double firstArgument, double secondArgument)
         {

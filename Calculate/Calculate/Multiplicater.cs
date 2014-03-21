@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Calculate
 {
-    class Multiplicater
+    class Multiplicater : IBinaryOperation
     {
         public string Calculate(double firstArgument, double secondArgument)
         {

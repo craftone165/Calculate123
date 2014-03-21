@@ -5,12 +5,13 @@ using System.Text;
 
 namespace Calculate
 {
-    public class Adder
+    public class Adder: IBinaryOperation
+
+{
+    public string Calculate(double firstArgument, double secondArgument)
     {
-        public string Calculate(double firstArgument, double secondArgument)
-        {
-            double result = firstArgument + secondArgument;
-            return result.ToString();
-        }
+        double result = firstArgument + secondArgument;
+        return result.ToString();
     }
+}
 }

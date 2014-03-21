@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Calculate
 {
-    class Deducater
+    class Deducater : IBinaryOperation
     {
         public string Calculate(double firstArgument, double secondArgument)
         {
