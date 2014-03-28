@@ -35,7 +35,7 @@
             this.substraction = new System.Windows.Forms.Button();
             this.multiplication = new System.Windows.Forms.Button();
             this.deducation = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -61,7 +61,7 @@
             // 
             // Sum
             // 
-            this.Sum.Location = new System.Drawing.Point(26, 119);
+            this.Sum.Location = new System.Drawing.Point(12, 119);
             this.Sum.Name = "Sum";
             this.Sum.Size = new System.Drawing.Size(75, 23);
             this.Sum.TabIndex = 3;
@@ -71,7 +71,7 @@
             // 
             // substraction
             // 
-            this.substraction.Location = new System.Drawing.Point(26, 148);
+            this.substraction.Location = new System.Drawing.Point(12, 148);
             this.substraction.Name = "substraction";
             this.substraction.Size = new System.Drawing.Size(75, 23);
             this.substraction.TabIndex = 4;
@@ -81,7 +81,7 @@
             // 
             // multiplication
             // 
-            this.multiplication.Location = new System.Drawing.Point(119, 119);
+            this.multiplication.Location = new System.Drawing.Point(93, 119);
             this.multiplication.Name = "multiplication";
             this.multiplication.Size = new System.Drawing.Size(75, 23);
             this.multiplication.TabIndex = 5;
@@ -91,7 +91,7 @@
             // 
             // deducation
             // 
-            this.deducation.Location = new System.Drawing.Point(119, 148);
+            this.deducation.Location = new System.Drawing.Point(93, 148);
             this.deducation.Name = "deducation";
             this.deducation.Size = new System.Drawing.Size(75, 23);
             this.deducation.TabIndex = 6;
@@ -99,21 +99,22 @@
             this.deducation.UseVisualStyleBackColor = true;
             this.deducation.Click += new System.EventHandler(this.deducation_Click);
             // 
-            // label1
+            // cos
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(119, 214);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "151111";
+            this.cos.Location = new System.Drawing.Point(174, 119);
+            this.cos.Name = "cos";
+            this.cos.Size = new System.Drawing.Size(75, 23);
+            this.cos.TabIndex = 8;
+            this.cos.Text = "cos";
+            this.cos.UseVisualStyleBackColor = true;
+            this.cos.Click += new System.EventHandler(this.cos_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cos);
             this.Controls.Add(this.deducation);
             this.Controls.Add(this.multiplication);
             this.Controls.Add(this.substraction);
@@ -138,7 +139,7 @@
         private System.Windows.Forms.Button substraction;
         private System.Windows.Forms.Button multiplication;
         private System.Windows.Forms.Button deducation;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button cos;
 
     }
 }

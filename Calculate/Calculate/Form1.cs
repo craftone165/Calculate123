@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Calculate.BinaryOperations;
+using Calculate.UnaryOperations;
 
 namespace Calculate
 {
@@ -44,9 +45,23 @@ namespace Calculate
             IBinaryOperation calculator = BinaryOperationFactory.CreateOperation(name);
             ResultArgument.Text = calculator.Calculate(first, second);
         }
+
+        private void UnaryCalculation(string name)
+        {
+            double first = Convert.ToDouble(FirstArgument.Text);
+            IUnaryOperation calculator = UnaryOperationFactory.CreateOperation(name);
+            ResultArgument.Text = calculator.Calculate(first);
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void cos_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("cos");
+            
         }
     }
 }

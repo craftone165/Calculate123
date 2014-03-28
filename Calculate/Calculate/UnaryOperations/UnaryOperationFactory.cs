@@ -8,7 +8,8 @@ namespace Calculate.UnaryOperations
         {
             switch (name)
             {
-             
+                case "cos":
+                    return new Cos();
                 default:
                     throw new ArgumentException("Неизвестный калькулятор","name");
             }
