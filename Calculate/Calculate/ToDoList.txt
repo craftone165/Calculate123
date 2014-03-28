@@ -1,0 +1,16 @@
+﻿Анисимов 
+sin
+arcsin
+tg
+x^y
+корень
+pi^х
+
+Гердт
+cos
+arccos
+ctg
+log2 
+ln
+e^x
+
