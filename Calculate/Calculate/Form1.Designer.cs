@@ -36,6 +36,13 @@
             this.multiplication = new System.Windows.Forms.Button();
             this.deducation = new System.Windows.Forms.Button();
             this.cos = new System.Windows.Forms.Button();
+            this.sin = new System.Windows.Forms.Button();
+            this.arcsin = new System.Windows.Forms.Button();
+            this.tg = new System.Windows.Forms.Button();
+            this.sqr = new System.Windows.Forms.Button();
+            this.sqrt = new System.Windows.Forms.Button();
+            this.pix = new System.Windows.Forms.Button();
+            this.clrscr = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -109,11 +116,90 @@
             this.cos.UseVisualStyleBackColor = true;
             this.cos.Click += new System.EventHandler(this.cos_Click);
             // 
+            // sin
+            // 
+            this.sin.Location = new System.Drawing.Point(12, 249);
+            this.sin.Name = "sin";
+            this.sin.Size = new System.Drawing.Size(75, 23);
+            this.sin.TabIndex = 9;
+            this.sin.Text = "sin";
+            this.sin.UseVisualStyleBackColor = true;
+            this.sin.Click += new System.EventHandler(this.sin_Click);
+            // 
+            // arcsin
+            // 
+            this.arcsin.Location = new System.Drawing.Point(93, 249);
+            this.arcsin.Name = "arcsin";
+            this.arcsin.Size = new System.Drawing.Size(75, 23);
+            this.arcsin.TabIndex = 10;
+            this.arcsin.Text = "arcsin";
+            this.arcsin.UseVisualStyleBackColor = true;
+            this.arcsin.Click += new System.EventHandler(this.arcsin_Click);
+            // 
+            // tg
+            // 
+            this.tg.Location = new System.Drawing.Point(174, 249);
+            this.tg.Name = "tg";
+            this.tg.Size = new System.Drawing.Size(75, 23);
+            this.tg.TabIndex = 11;
+            this.tg.Text = "tg";
+            this.tg.UseVisualStyleBackColor = true;
+            this.tg.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // sqr
+            // 
+            this.sqr.Location = new System.Drawing.Point(174, 278);
+            this.sqr.Name = "sqr";
+            this.sqr.Size = new System.Drawing.Size(75, 23);
+            this.sqr.TabIndex = 12;
+            this.sqr.Text = "X ^ 2";
+            this.sqr.UseVisualStyleBackColor = true;
+            this.sqr.Click += new System.EventHandler(this.sqr_Click);
+            // 
+            // sqrt
+            // 
+            this.sqrt.Location = new System.Drawing.Point(93, 278);
+            this.sqrt.Name = "sqrt";
+            this.sqrt.Size = new System.Drawing.Size(75, 23);
+            this.sqrt.TabIndex = 13;
+            this.sqrt.Text = "V¯";
+            this.sqrt.UseVisualStyleBackColor = true;
+            this.sqrt.Click += new System.EventHandler(this.sqrt_Click);
+            // 
+            // pix
+            // 
+            this.pix.Location = new System.Drawing.Point(12, 278);
+            this.pix.Name = "pix";
+            this.pix.Size = new System.Drawing.Size(75, 23);
+            this.pix.TabIndex = 14;
+            this.pix.Text = "PI ^ x";
+            this.pix.UseVisualStyleBackColor = true;
+            this.pix.Click += new System.EventHandler(this.pix_Click);
+            // 
+            // clrscr
+            // 
+            this.clrscr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.clrscr.Location = new System.Drawing.Point(206, 47);
+            this.clrscr.Name = "clrscr";
+            this.clrscr.Size = new System.Drawing.Size(43, 34);
+            this.clrscr.TabIndex = 15;
+            this.clrscr.Text = "C";
+            this.clrscr.UseVisualStyleBackColor = true;
+            this.clrscr.Click += new System.EventHandler(this.clrscr_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(302, 329);
+            this.Controls.Add(this.clrscr);
+            this.Controls.Add(this.pix);
+            this.Controls.Add(this.sqrt);
+            this.Controls.Add(this.sqr);
+            this.Controls.Add(this.tg);
+            this.Controls.Add(this.arcsin);
+            this.Controls.Add(this.sin);
             this.Controls.Add(this.cos);
             this.Controls.Add(this.deducation);
             this.Controls.Add(this.multiplication);
@@ -123,7 +209,7 @@
             this.Controls.Add(this.SecondArgument);
             this.Controls.Add(this.FirstArgument);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculate";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -140,6 +226,13 @@
         private System.Windows.Forms.Button multiplication;
         private System.Windows.Forms.Button deducation;
         private System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button sin;
+        private System.Windows.Forms.Button arcsin;
+        private System.Windows.Forms.Button tg;
+        private System.Windows.Forms.Button sqr;
+        private System.Windows.Forms.Button sqrt;
+        private System.Windows.Forms.Button pix;
+        private System.Windows.Forms.Button clrscr;
 
     }
 }

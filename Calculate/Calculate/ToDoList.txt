@@ -2,7 +2,7 @@
 sin
 arcsin
 tg
-x^y
+x^2
 корень
 pi^х
 

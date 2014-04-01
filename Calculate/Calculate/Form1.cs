@@ -63,5 +63,42 @@ namespace Calculate
             UnaryCalculation("cos");
             
         }
+
+        private void sin_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("sin"); 
+        }
+
+        private void arcsin_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("arcsin");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("tg");
+        }
+
+        private void pix_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("pix");
+        }
+
+        private void sqrt_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("sqrt");
+        }
+
+        private void sqr_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("sqr");
+        }
+
+        private void clrscr_Click(object sender, EventArgs e)
+        {
+            FirstArgument.Text = "";
+            SecondArgument.Text = "";
+            ResultArgument.Text = "";
+        }
     }
 }
