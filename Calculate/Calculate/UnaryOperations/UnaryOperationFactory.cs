@@ -30,6 +30,8 @@ namespace Calculate.UnaryOperations
                     return new Log2();
                 case "ln":
                     return new Ln();
+                case "exppower":
+                    return new expPower();
                 default:
                     throw new ArgumentException("Неизвестный калькулятор","name");
             }

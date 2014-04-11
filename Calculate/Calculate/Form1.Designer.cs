@@ -47,6 +47,7 @@
             this.ctg = new System.Windows.Forms.Button();
             this.log2 = new System.Windows.Forms.Button();
             this.ln = new System.Windows.Forms.Button();
+            this.expPower = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -229,7 +230,17 @@
             this.ln.TabIndex = 19;
             this.ln.Text = "ln";
             this.ln.UseVisualStyleBackColor = true;
-            this.ln.Click += new System.EventHandler(this.button1_Click_1);
+            this.ln.Click += new System.EventHandler(this.ln_Click_1);
+            // 
+            // expPower
+            // 
+            this.expPower.Location = new System.Drawing.Point(174, 191);
+            this.expPower.Name = "expPower";
+            this.expPower.Size = new System.Drawing.Size(75, 23);
+            this.expPower.TabIndex = 20;
+            this.expPower.Text = "e^x";
+            this.expPower.UseVisualStyleBackColor = true;
+            this.expPower.Click += new System.EventHandler(this.expPower_Click);
             // 
             // Form1
             // 
@@ -237,6 +248,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(302, 329);
+            this.Controls.Add(this.expPower);
             this.Controls.Add(this.ln);
             this.Controls.Add(this.log2);
             this.Controls.Add(this.ctg);
@@ -285,6 +297,7 @@
         private System.Windows.Forms.Button ctg;
         private System.Windows.Forms.Button log2;
         private System.Windows.Forms.Button ln;
+        private System.Windows.Forms.Button expPower;
 
     }
 }

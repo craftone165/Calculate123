@@ -116,9 +116,14 @@ namespace Calculate
             UnaryCalculation("log2");
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void ln_Click_1(object sender, EventArgs e)
         {
             UnaryCalculation("ln");
+        }
+
+        private void expPower_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("exppower");
         }
     }
 }
