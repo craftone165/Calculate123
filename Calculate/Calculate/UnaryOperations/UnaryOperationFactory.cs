@@ -14,8 +14,12 @@ namespace Calculate.UnaryOperations
                     return new Sin();
                 case "arcsin":
                     return new Arcsin();
+                case "arccos":
+                    return new Arccos();
                 case "tg":
                     return new Tg();
+                case "ctg":
+                    return new Ctg();
                 case "sqrt":
                     return new Sqrt();
                 case "sqr":

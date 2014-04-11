@@ -100,5 +100,15 @@ namespace Calculate
             SecondArgument.Text = "";
             ResultArgument.Text = "";
         }
+
+        private void arccos_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("arccos");
+        }
+
+        private void ctg_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("ctg");
+        }
     }
 }

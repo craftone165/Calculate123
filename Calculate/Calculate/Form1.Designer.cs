@@ -43,6 +43,8 @@
             this.sqrt = new System.Windows.Forms.Button();
             this.pix = new System.Windows.Forms.Button();
             this.clrscr = new System.Windows.Forms.Button();
+            this.arccos = new System.Windows.Forms.Button();
+            this.ctg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -108,7 +110,7 @@
             // 
             // cos
             // 
-            this.cos.Location = new System.Drawing.Point(174, 119);
+            this.cos.Location = new System.Drawing.Point(12, 220);
             this.cos.Name = "cos";
             this.cos.Size = new System.Drawing.Size(75, 23);
             this.cos.TabIndex = 8;
@@ -187,12 +189,34 @@
             this.clrscr.UseVisualStyleBackColor = true;
             this.clrscr.Click += new System.EventHandler(this.clrscr_Click);
             // 
+            // arccos
+            // 
+            this.arccos.Location = new System.Drawing.Point(93, 220);
+            this.arccos.Name = "arccos";
+            this.arccos.Size = new System.Drawing.Size(75, 23);
+            this.arccos.TabIndex = 16;
+            this.arccos.Text = "arccos";
+            this.arccos.UseVisualStyleBackColor = true;
+            this.arccos.Click += new System.EventHandler(this.arccos_Click);
+            // 
+            // ctg
+            // 
+            this.ctg.Location = new System.Drawing.Point(174, 220);
+            this.ctg.Name = "ctg";
+            this.ctg.Size = new System.Drawing.Size(75, 23);
+            this.ctg.TabIndex = 17;
+            this.ctg.Text = "ctg";
+            this.ctg.UseVisualStyleBackColor = true;
+            this.ctg.Click += new System.EventHandler(this.ctg_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(302, 329);
+            this.Controls.Add(this.ctg);
+            this.Controls.Add(this.arccos);
             this.Controls.Add(this.clrscr);
             this.Controls.Add(this.pix);
             this.Controls.Add(this.sqrt);
@@ -233,6 +257,8 @@
         private System.Windows.Forms.Button sqrt;
         private System.Windows.Forms.Button pix;
         private System.Windows.Forms.Button clrscr;
+        private System.Windows.Forms.Button arccos;
+        private System.Windows.Forms.Button ctg;
 
     }
 }

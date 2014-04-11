@@ -60,6 +60,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BinaryOperations\Substracter.cs" />
+    <Compile Include="UnaryOperations\Arccos.cs" />
     <Compile Include="UnaryOperations\Arcsin.cs" />
     <Compile Include="UnaryOperations\Cos.cs" />
     <Compile Include="UnaryOperations\Pix.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="UnaryOperations\Tg.cs" />
     <Compile Include="UnaryOperations\UnaryOperationFactory.cs" />
     <Compile Include="UnaryOperations\IUnaryOperation.cs" />
+    <Compile Include="UnaryOperations\Ctg.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
