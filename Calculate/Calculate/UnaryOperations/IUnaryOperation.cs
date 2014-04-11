@@ -2,7 +2,7 @@
 {
    public interface IUnaryOperation
    {
-       string Calculate(double firstArgument);
+       double Calculate(double firstArgument);
 
    }
 }

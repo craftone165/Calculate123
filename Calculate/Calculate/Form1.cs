@@ -43,14 +43,14 @@ namespace Calculate
             double first = Convert.ToDouble(FirstArgument.Text);
             double second = Convert.ToDouble(SecondArgument.Text);
             IBinaryOperation calculator = BinaryOperationFactory.CreateOperation(name);
-            ResultArgument.Text = calculator.Calculate(first, second);
+            ResultArgument.Text = calculator.Calculate(first, second).ToString();
         }
 
         private void UnaryCalculation(string name)
         {
             double first = Convert.ToDouble(FirstArgument.Text);
             IUnaryOperation calculator = UnaryOperationFactory.CreateOperation(name);
-            ResultArgument.Text = calculator.Calculate(first);
+            ResultArgument.Text = calculator.Calculate(first).ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)

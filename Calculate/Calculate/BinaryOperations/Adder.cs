@@ -3,10 +3,10 @@
     public class Adder: IBinaryOperation
 
 {
-    public string Calculate(double firstArgument, double secondArgument)
+    public double Calculate(double firstArgument, double secondArgument)
     {
         double result = firstArgument + secondArgument;
-        return result.ToString();
+        return result;
     }
 }
 }

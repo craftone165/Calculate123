@@ -7,10 +7,10 @@ namespace Calculate.UnaryOperations
 {
     public class Ctg : IUnaryOperation
     {
-        public string Calculate(double firstArgument)
+        public double Calculate(double firstArgument)
         {
             double result = Math.Atan(firstArgument);
-            return result.ToString();
+            return result;
         }
     }
 }
