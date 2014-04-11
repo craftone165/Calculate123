@@ -71,6 +71,8 @@
     <Compile Include="UnaryOperations\UnaryOperationFactory.cs" />
     <Compile Include="UnaryOperations\IUnaryOperation.cs" />
     <Compile Include="UnaryOperations\Ctg.cs" />
+    <Compile Include="UnaryOperations\Log2.cs" />
+    <Compile Include="UnaryOperations\Ln.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

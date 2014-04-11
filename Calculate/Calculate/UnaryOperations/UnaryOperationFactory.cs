@@ -26,6 +26,10 @@ namespace Calculate.UnaryOperations
                     return new Sqr();
                 case "pix":
                     return new Pix();
+                case "log2":
+                    return new Log2();
+                case "ln":
+                    return new Ln();
                 default:
                     throw new ArgumentException("Неизвестный калькулятор","name");
             }

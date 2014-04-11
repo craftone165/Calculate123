@@ -45,6 +45,8 @@
             this.clrscr = new System.Windows.Forms.Button();
             this.arccos = new System.Windows.Forms.Button();
             this.ctg = new System.Windows.Forms.Button();
+            this.log2 = new System.Windows.Forms.Button();
+            this.ln = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -209,12 +211,34 @@
             this.ctg.UseVisualStyleBackColor = true;
             this.ctg.Click += new System.EventHandler(this.ctg_Click);
             // 
+            // log2
+            // 
+            this.log2.Location = new System.Drawing.Point(12, 191);
+            this.log2.Name = "log2";
+            this.log2.Size = new System.Drawing.Size(75, 23);
+            this.log2.TabIndex = 18;
+            this.log2.Text = "log2";
+            this.log2.UseVisualStyleBackColor = true;
+            this.log2.Click += new System.EventHandler(this.log2_Click);
+            // 
+            // ln
+            // 
+            this.ln.Location = new System.Drawing.Point(93, 191);
+            this.ln.Name = "ln";
+            this.ln.Size = new System.Drawing.Size(75, 23);
+            this.ln.TabIndex = 19;
+            this.ln.Text = "ln";
+            this.ln.UseVisualStyleBackColor = true;
+            this.ln.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(302, 329);
+            this.Controls.Add(this.ln);
+            this.Controls.Add(this.log2);
             this.Controls.Add(this.ctg);
             this.Controls.Add(this.arccos);
             this.Controls.Add(this.clrscr);
@@ -259,6 +283,8 @@
         private System.Windows.Forms.Button clrscr;
         private System.Windows.Forms.Button arccos;
         private System.Windows.Forms.Button ctg;
+        private System.Windows.Forms.Button log2;
+        private System.Windows.Forms.Button ln;
 
     }
 }
