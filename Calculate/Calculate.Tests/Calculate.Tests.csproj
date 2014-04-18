@@ -43,7 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnaryOperations\ArccosTests.cs" />
     <Compile Include="UnaryOperations\CosTests.cs" />
+    <Compile Include="UnaryOperations\CtgTests.cs" />
+    <Compile Include="UnaryOperations\ExppowerxTests.cs" />
+    <Compile Include="UnaryOperations\LnTests.cs" />
+    <Compile Include="UnaryOperations\Log2Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

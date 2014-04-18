@@ -9,7 +9,7 @@ namespace Calculate.UnaryOperations
     {
         public double Calculate(double firstArgument)
         {
-            double result = Math.Log10(firstArgument);
+            double result = Math.Log(firstArgument);
             return result;
         }
     }

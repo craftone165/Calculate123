@@ -9,7 +9,7 @@ namespace Calculate.UnaryOperations
     {
         public double Calculate(double firstArgument)
         {
-            double result = Math.Atan(firstArgument);
+            double result = Math.Cos(firstArgument)/Math.Sin(firstArgument);
             return result;
         }
     }
