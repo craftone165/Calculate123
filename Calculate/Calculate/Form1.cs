@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Calculate.BinaryOperations;
+using Calculate.SortingOperations;
 using Calculate.UnaryOperations;
 
 namespace Calculate
@@ -53,6 +54,17 @@ namespace Calculate
             ResultArgument.Text = calculator.Calculate(first).ToString();
         }
 
+        private void SortCalculation(string name)
+        {
+            string[] first = FirstArgument.Text.Split(' ');
+            int[] array = new int[first.Length];
+            for (int i = 0; i < first.Length; i++)
+            {
+                array[i] = Convert.ToInt32(first[i]);
+            }
+            ISortingOperation calculator = SortingOperationsFactory.CreateOperation(name);
+            ResultArgument.Text = calculator.Sort(array).ToString();
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
