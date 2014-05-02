@@ -1,6 +1,6 @@
 ﻿namespace Calculate.BinaryOperations
 {
-    class Deducater : IBinaryOperation
+    class Divider : IBinaryOperation
     {
         public double Calculate(double firstArgument, double secondArgument)
         {

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Calculate.UnaryOperations
 {
@@ -9,6 +6,8 @@ namespace Calculate.UnaryOperations
     {
         public double Calculate(double firstArgument)
         {
+            if(firstArgument<=0)
+            {throw new ArgumentException("Логарифм от чисел меньше 0 не существует");}
             double result = Math.Log(firstArgument,2);
             return result;
         }

@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using Calculate.BinaryOperations;
 using Calculate.SortingOperations;
@@ -49,10 +43,17 @@ namespace Calculate
 
         private void UnaryCalculation(string name)
         {
-            double first = Convert.ToDouble(FirstArgument.Text);
-            IUnaryOperation calculator = UnaryOperationFactory.CreateOperation(name);
-            ResultArgument.Text = calculator.Calculate(first).ToString();
-        }
+            try
+            {
+                double first = Convert.ToDouble(FirstArgument.Text);
+                IUnaryOperation calculator = UnaryOperationFactory.CreateOperation(name);
+                ResultArgument.Text = calculator.Calculate(first).ToString();
+            }
+            catch (Exception e)
+            {
+                ResultArgument.Text = e.Message;
+            }
+    }
 
         private void SortCalculation(string name)
         {

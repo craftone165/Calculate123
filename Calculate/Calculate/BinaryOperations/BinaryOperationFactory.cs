@@ -13,7 +13,7 @@ namespace Calculate.BinaryOperations
                 case "-":
                     return new Substracter();
                 case "/":
-                    return new Deducater();
+                    return new Divider();
                 case "*":
                     return new Multiplicater();
                 default:

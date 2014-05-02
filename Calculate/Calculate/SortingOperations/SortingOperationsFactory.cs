@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Calculate.SortingOperations
 {
@@ -12,7 +9,7 @@ namespace Calculate.SortingOperations
             switch (name)
             {
                 case "bogosort":
-                    return new BogoSort(); 
+                    return new BogoSort();
                 case "quicksort":
                     return new QuickSort();
                 default:

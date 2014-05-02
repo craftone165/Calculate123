@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="BinaryOperations\Adder.cs" />
     <Compile Include="BinaryOperations\BinaryOperationFactory.cs" />
-    <Compile Include="BinaryOperations\Deducater.cs" />
+    <Compile Include="BinaryOperations\Divider.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

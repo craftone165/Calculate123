@@ -1,22 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Calculate.SortingOperations
+﻿namespace Calculate.SortingOperations
 {
-    class QuickSort : ISortingOperation
+    internal class QuickSort : ISortingOperation
     {
         public int[] Sort(int[] array)
         {
-            Quicksort(array,0,array.Length-1);
+            Quicksort(array, 0, array.Length - 1);
             return array;
         }
 
         private void Quicksort(int[] elements, int left, int right)
         {
             int i = left, j = right;
-            int pivot = elements[(left + right) / 2];
+            int pivot = elements[(left + right)/2];
 
             while (i <= j)
             {

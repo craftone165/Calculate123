@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Calculate.SortingOperations;
+﻿using Calculate.SortingOperations;
 using NUnit.Framework;
 
 namespace Calculate.Tests.SortingOperations
