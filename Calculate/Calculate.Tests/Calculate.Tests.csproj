@@ -51,6 +51,10 @@
     <Compile Include="UnaryOperations\Log2Tests.cs" />
     <Compile Include="UnaryOperations\SinTests.cs" />
     <Compile Include="UnaryOperations\ArcsinTests.cs" />
+    <Compile Include="UnaryOperations\TgTests.cs" />
+    <Compile Include="UnaryOperations\SqrTests.cs" />
+    <Compile Include="UnaryOperations\SqrtTests.cs" />
+    <Compile Include="UnaryOperations\PixTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
