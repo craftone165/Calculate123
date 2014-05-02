@@ -60,7 +60,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BinaryOperations\Substracter.cs" />
+    <Compile Include="SortingOperations\BogoSort.cs" />
     <Compile Include="SortingOperations\ISortingOperation.cs" />
+    <Compile Include="SortingOperations\QuickSort.cs" />
     <Compile Include="SortingOperations\SortingOperationsFactory.cs" />
     <Compile Include="UnaryOperations\Arccos.cs" />
     <Compile Include="UnaryOperations\Arcsin.cs" />

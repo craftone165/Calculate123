@@ -11,10 +11,10 @@ namespace Calculate.SortingOperations
         {
             switch (name)
             {
-                case "+":
-               //     return new ();
-                case "-":
-               //     return new();
+                case "bogosort":
+                    return new BogoSort(); 
+                case "quicksort":
+                    return new QuickSort();
                 default:
                     throw new ArgumentException("Неизвестный калькулятор", "name");
             }

@@ -48,6 +48,8 @@
             this.log2 = new System.Windows.Forms.Button();
             this.ln = new System.Windows.Forms.Button();
             this.expPower = new System.Windows.Forms.Button();
+            this.bogosort = new System.Windows.Forms.Button();
+            this.quicksort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -242,12 +244,34 @@
             this.expPower.UseVisualStyleBackColor = true;
             this.expPower.Click += new System.EventHandler(this.expPower_Click);
             // 
+            // bogosort
+            // 
+            this.bogosort.Location = new System.Drawing.Point(184, 119);
+            this.bogosort.Name = "bogosort";
+            this.bogosort.Size = new System.Drawing.Size(75, 23);
+            this.bogosort.TabIndex = 21;
+            this.bogosort.Text = "bogosort";
+            this.bogosort.UseVisualStyleBackColor = true;
+            this.bogosort.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // quicksort
+            // 
+            this.quicksort.Location = new System.Drawing.Point(184, 148);
+            this.quicksort.Name = "quicksort";
+            this.quicksort.Size = new System.Drawing.Size(75, 23);
+            this.quicksort.TabIndex = 22;
+            this.quicksort.Text = "quicksort";
+            this.quicksort.UseVisualStyleBackColor = true;
+            this.quicksort.Click += new System.EventHandler(this.quicksort_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(302, 329);
+            this.Controls.Add(this.quicksort);
+            this.Controls.Add(this.bogosort);
             this.Controls.Add(this.expPower);
             this.Controls.Add(this.ln);
             this.Controls.Add(this.log2);
@@ -298,6 +322,8 @@
         private System.Windows.Forms.Button log2;
         private System.Windows.Forms.Button ln;
         private System.Windows.Forms.Button expPower;
+        private System.Windows.Forms.Button bogosort;
+        private System.Windows.Forms.Button quicksort;
 
     }
 }

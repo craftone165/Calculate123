@@ -63,7 +63,13 @@ namespace Calculate
                 array[i] = Convert.ToInt32(first[i]);
             }
             ISortingOperation calculator = SortingOperationsFactory.CreateOperation(name);
-            ResultArgument.Text = calculator.Sort(array).ToString();
+            calculator.Sort(array);
+            string result = string.Empty;
+            for (int i = 0; i < first.Length; i++)
+            {
+                result += array[i]+" ";
+            }
+            ResultArgument.Text = result;
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -136,6 +142,17 @@ namespace Calculate
         private void expPower_Click(object sender, EventArgs e)
         {
             UnaryCalculation("exppower");
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            SortCalculation("bogosort");
+        
+        }
+
+        private void quicksort_Click(object sender, EventArgs e)
+        {
+            SortCalculation("quicksort");
         }
     }
 }
