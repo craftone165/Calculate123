@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortingOperations\BogoSortTests.cs" />
+    <Compile Include="SortingOperations\QuickSortTests.cs" />
     <Compile Include="UnaryOperations\ArccosTests.cs" />
     <Compile Include="UnaryOperations\CosTests.cs" />
     <Compile Include="UnaryOperations\CtgTests.cs" />
