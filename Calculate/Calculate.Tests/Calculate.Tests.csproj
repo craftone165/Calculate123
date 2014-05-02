@@ -49,6 +49,8 @@
     <Compile Include="UnaryOperations\ExppowerxTests.cs" />
     <Compile Include="UnaryOperations\LnTests.cs" />
     <Compile Include="UnaryOperations\Log2Tests.cs" />
+    <Compile Include="UnaryOperations\SinTests.cs" />
+    <Compile Include="UnaryOperations\ArcsinTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

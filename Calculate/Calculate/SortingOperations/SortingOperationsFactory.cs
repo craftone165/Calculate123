@@ -12,9 +12,9 @@ namespace Calculate.SortingOperations
             switch (name)
             {
                 case "+":
-                    return new ();
+               //     return new ();
                 case "-":
-                    return new();
+               //     return new();
                 default:
                     throw new ArgumentException("Неизвестный калькулятор", "name");
             }
