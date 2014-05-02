@@ -6,6 +6,10 @@ namespace Calculate.UnaryOperations
     {
         public double Calculate(double firstArgument)
         {
+            if (firstArgument < 0)
+            {
+                throw new ArgumentException("Недопустимые значения");
+            }
             double result = Math.Sqrt(firstArgument);
             return result;
         }

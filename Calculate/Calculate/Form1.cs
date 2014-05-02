@@ -35,10 +35,17 @@ namespace Calculate
 
         private void BinaryCalculation(string name)
         {
-            double first = Convert.ToDouble(FirstArgument.Text);
-            double second = Convert.ToDouble(SecondArgument.Text);
-            IBinaryOperation calculator = BinaryOperationFactory.CreateOperation(name);
-            ResultArgument.Text = calculator.Calculate(first, second).ToString();
+            try
+            {
+                double first = Convert.ToDouble(FirstArgument.Text);
+                double second = Convert.ToDouble(SecondArgument.Text);
+                IBinaryOperation calculator = BinaryOperationFactory.CreateOperation(name);
+                ResultArgument.Text = calculator.Calculate(first, second).ToString();
+            }
+            catch (Exception e)
+            {
+                ResultArgument.Text = e.Message;
+            }
         }
 
         private void UnaryCalculation(string name)
@@ -57,21 +64,30 @@ namespace Calculate
 
         private void SortCalculation(string name)
         {
-            string[] first = FirstArgument.Text.Split(' ');
-            int[] array = new int[first.Length];
-            for (int i = 0; i < first.Length; i++)
+            try
             {
-                array[i] = Convert.ToInt32(first[i]);
+                string[] first = FirstArgument.Text.Split(' ');
+                int[] array = new int[first.Length];
+                for (int i = 0; i < first.Length; i++)
+                {
+                    array[i] = Convert.ToInt32(first[i]);
+                }
+                ISortingOperation calculator = SortingOperationsFactory.CreateOperation(name);
+                calculator.Sort(array);
+                string result = string.Empty;
+                for (int i = 0; i < first.Length; i++)
+                {
+                    result += array[i] + " ";
+                }
+                ResultArgument.Text = result;
+
             }
-            ISortingOperation calculator = SortingOperationsFactory.CreateOperation(name);
-            calculator.Sort(array);
-            string result = string.Empty;
-            for (int i = 0; i < first.Length; i++)
+            catch (Exception e)
             {
-                result += array[i]+" ";
+                ResultArgument.Text = e.Message;
             }
-            ResultArgument.Text = result;
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
